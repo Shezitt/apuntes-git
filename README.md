@@ -36,3 +36,9 @@ init.defaultbranch=main
 ```
 
 Los más fundamentales son los primeros tres. El último lo configuré para asegurarme que la rama principal sea `main`, respetando la convención actual.
+
+Para establecer alguna configuración, se sigue la siguiente sintaxis, por ejemplo para configurar el user.email a nivel `global`:
+
+```bash
+git config --global user.email "shamirteranmustafa@gmail.com"
+```
