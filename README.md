@@ -69,5 +69,18 @@ También podemos indicar nuestro editor de código preferido, por ejemplo para V
 git config --global core.editor "code --wait"
 ```
 
+## Eliminar configuraciones
+
+Usando **git config** podemos eliminar ajustes usando la opción **--unset**:
+
+```bash
+git config --global --unset [seccion].[variable]
+```
+
+Por ejemplo, para eliminar nuestro nombre de usuario:
+
+```bash
+git config --global --unset user.name
+```
 
 
