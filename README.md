@@ -129,4 +129,8 @@ Archivos cuyos cambios están siendo monitoreados por Git; y el archivo ha cambi
 
 Archivos cuyos cambios son monitoreados por Git; el archivo cambió respecto al último commit y ha sido *stageado* al **index**. Estos archivos están listos para ser commiteados.
 
-![Archivos stagged](/images/stagged.png)
+Un archivo entra en esta área cada vez que usamos `git add`.
+
+Por ejemplo, al ejecutar `git add staged.txt`:
+
+![Archivos staged](/images/staged.png)
