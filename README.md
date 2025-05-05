@@ -35,3 +35,39 @@ Estos se guardan en el archivo **path_repositorio/.git/config**. Estos ajustes s
 Estos ajustes se acceden mediante **git config --local**.
 
 También podemos especificar un archivo de configuración específico usando la flag **-f** o equivalente **--file**.
+
+Podemos listar las configuraciones actuales con:
+
+```bash
+git config --<nivel> --list
+```
+
+O también:
+
+```bash
+git config --list
+```
+
+## Configuraciones iniciales
+
+Como configuraciones iniciales, deberíamos establecer nuestras credenciales:
+
+1. Definir nuestro nombre de usuario:
+```bash
+git config --global user.name shezitt
+```
+(Reemplazar "shezitt" por tu nombre)
+
+2. Definir nuestro correo electrónico:
+```bash
+git config --global user.email shamirteranmustafa@gmail.com
+```
+
+También podemos indicar nuestro editor de código preferido, por ejemplo para Visual Studio Code (code):
+
+```bash
+git config --global core.editor "code --wait"
+```
+
+
+
