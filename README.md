@@ -113,8 +113,8 @@ git init
 
 En Git, los archivos tienen los siguientes estados:
 
-### Untracked
+### Untracked (archivos sin seguimiento)
 
 Un archivo que existe en el directorio que estamos trabajando pero cuyos cambios todavía no han sido monitoreados por Git y no está listado en el archivo gitignore.
 
-<img src="/images/untracked.png" alt="Untracked files">
+![Archivos sin seguimiento](/images/untracked.png)
