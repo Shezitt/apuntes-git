@@ -125,4 +125,8 @@ Archivos cuyos cambios están siendo monitoreados por Git; y el archivo ha cambi
 
 ![Archivos unstaged](/images/unstaged.png)
 
+### Staged
 
+Archivos cuyos cambios son monitoreados por Git; el archivo cambió respecto al último commit y ha sido *stageado* al **index**. Estos archivos están listos para ser commiteados.
+
+![Archivos stagged](/images/stagged.png)
