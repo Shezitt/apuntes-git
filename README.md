@@ -86,3 +86,25 @@ git config --global --unset user.name
 ## Configurar llave SSH
 
 *Pendiente*.
+
+## Crear un repositorio 
+
+Primero crearemos un repositorio local, utilizando **git init**:
+
+1. Creamos un directorio en la ruta que deseemos, esta será para nuestro repositorio:
+
+```bash
+~/Documentos/repos/> mkdir Nuevo-Repo
+```
+
+2. Entramos en el directorio creado:
+
+```bash
+cd Nuevo-Repo
+```
+
+3. Ejecutamos **git init**:
+
+```bash
+git init
+```
