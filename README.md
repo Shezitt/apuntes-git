@@ -136,3 +136,11 @@ Un archivo entra en esta área cada vez que usamos `git add`.
 Por ejemplo, al ejecutar `git add staged.txt`:
 
 ![Archivos staged](/images/staged.png)
+
+### git status
+
+El comando `git status` nos permite conocer los detalles de archivos del repositorio que están en estado *untracked*, *unstaged* o *staged*.
+
+Para ver una versión más brave de la salida de este comando, podemos usar la flag **--short** o **-s**
+
+Las capturas anteriores eran justamente resultado de ejecutar `git status`.
