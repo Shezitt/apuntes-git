@@ -119,6 +119,8 @@ Un archivo que existe en el directorio que estamos trabajando pero cuyos cambios
 
 ![Archivos sin seguimiento](/images/untracked.png)
 
+Básicamente se refiere a archivos nuevos.
+
 ### Unstaged 
 
 Archivos cuyos cambios están siendo monitoreados por Git; y el archivo ha cambiado respecto al último commit.
