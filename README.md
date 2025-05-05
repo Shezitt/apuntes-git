@@ -118,3 +118,11 @@ En Git, los archivos tienen los siguientes estados:
 Un archivo que existe en el directorio que estamos trabajando pero cuyos cambios todavía no han sido monitoreados por Git y no está listado en el archivo gitignore.
 
 ![Archivos sin seguimiento](/images/untracked.png)
+
+### Unstaged 
+
+Archivos cuyos cambios están siendo monitoreados por Git; y el archivo ha cambiado respecto al último commit.
+
+![Archivos unstaged](/images/unstaged.png)
+
+
