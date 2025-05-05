@@ -10,35 +10,28 @@ Para instalar Git en Linux, basta con ejecutar el siguiente comando:
 sudo apt install git
 ```
 
-## Configuraciones iniciales
+## Configuraciones 
 
-Una vez instalado Git, en el caso de Linux, tenemos que configurar algunos puntos importantes: nuestro nombre, correo y nuestro editor de texto preferido.
+Git soporta opciones de configuración. Estas opciones son usados por los comandos de Git para definir ciertos comportamientos. Podemos settera estos ajustes con `git config`.
 
-Para ver la configuración actual (a nivel `global`) podemos usar el siguiente comando:
+Estos ajustes están establecidos en tres niveles:
 
-```bash
-git config --global --list
-```
+### A nivel de sistema
 
-En realidad, hay diferentes jerarquías de configuración, de ahí una de ellas es `global`. Las jerarquías, en orden de más general a más específico, son las siguientes:
+Estas están ubicadas en el archivo **/etc/gitconfig**. Los ajustes de este archivo son aplicados para todos los usuarios de la computadora. 
 
-1. `system`
-2. `global`
-3. `local`
+Para acceder a estos ajustes, tenemos que usar **git config --system**.
 
-Por ejemplo, esta es mi configuración global actualmente (resultado de ejecutar el anterior comando):
+### A nivel de usuario
 
-```bash
-core.editor=code --wait
-user.name=Shezitt
-user.email=shamirteranmustafa@gmail.com
-init.defaultbranch=main
-```
+Estas se ajustan en el archivo **~/.gitconfig**. Estos ajustes serán aplicados para el usuario que corresponda.
 
-Los más fundamentales son los primeros tres. El último lo configuré para asegurarme que la rama principal sea `main`, respetando la convención actual.
+Estos ajusten se pueden acceder mediante **git config --global**.
 
-Para establecer alguna configuración, se sigue la siguiente sintaxis, por ejemplo para configurar el user.email a nivel `global`:
+### A nivel de repositorio
 
-```bash
-git config --global user.email "shamirteranmustafa@gmail.com"
-```
+Estos se guardan en el archivo **path_repositorio/.git/config**. Estos ajustes se aplican solo para el repositorio actual. Por ejemplo, la URL del repositorio remoto se guarda en este nivel. 
+
+Estos ajustes se acceden mediante **git config --local**.
+
+También podemos especificar un archivo de configuración específico usando la flag **-f** o equivalente **--file**.
