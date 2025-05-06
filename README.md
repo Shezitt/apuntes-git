@@ -421,3 +421,9 @@ Ejemplo:
 ```bash
 git remote add origin git@github.com:Shezitt/apuntes-git.git
 ``` 
+
+#### Eliminar un remote
+
+```bash
+git remote remove <nombre>
+```
