@@ -331,3 +331,9 @@ git rebase --continue
 En un sistema de control de versiones distribuido, el código base reside en un punto central del cual los contribuidores pueden recuperar el código, hacer cambios locales y publicar los cambios en el host central.
 
 Algunos términos para describir el vínculo entre el código que se modifica localmente y el código hosteado en GitHub son los siguientes:
+
+### Upstream
+
+Este se refiere al repositorio en el hosting. De este repositorio es del cual los contribuidores pueden clonar el repositorio para sus entornos locales, hacer cambios y luego publicarlos.
+
+Cuando se hace *forking*, hacemos fork de este repositorio. 
