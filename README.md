@@ -337,3 +337,7 @@ Algunos términos para describir el vínculo entre el código que se modifica lo
 Este se refiere al repositorio en el hosting. De este repositorio es del cual los contribuidores pueden clonar el repositorio para sus entornos locales, hacer cambios y luego publicarlos.
 
 Cuando se hace *forking*, hacemos fork de este repositorio. 
+
+### Downstream
+
+Se refiere a un repositorio que se encuentra en tu entorno local. El repositorio *downstream* es el resultado de clonar un repositorio *upstream*. Es tu copia local de un repositorio upstream.
