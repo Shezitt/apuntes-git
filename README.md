@@ -430,4 +430,6 @@ git remote remove <nombre>
 
 #### Cambiar la URL de un remote
 
+```bash
 git remote set-url <nombre> <nueva-url>
+```
