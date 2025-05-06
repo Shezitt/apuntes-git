@@ -437,3 +437,24 @@ git remote set-url <nombre> <nueva-url>
 ## Fetch, push y pull
 
 Estos comandos nos permiten sincronizar nuestro repositorio local con el repositorio remoto (o varios).
+
+### git fetch
+
+```bash
+git fetch [nombre_remoto]
+```
+
+Esto descarga los cambios del remoto, pero no los aplica a tu rama actual.
+
+Quedan en `nombre_remoto/rama` y tú decides cuándo revisarlos o hacer hacer merge. 
+
+Por ejemplo, supongamos que hay nuevos cambios en la rama `main` en el remoto `origin`:
+
+* `git fetch origin`
+* Y luego podemos ver los cambios con:
+
+```bash
+git log origin/main
+```
+
+Pero tu rama actual no cambia.
