@@ -228,3 +228,19 @@ El comando `git add` nos sirve para agregar archivos al **Index** desde nuestro 
 ```bash
 git add [options] [path_to_files]
 ```
+
+### git commit
+
+Este comando permite crear un nuevo commit, guardando los cambios de los archivos que estaban en el Index. Este comando debe ir acompañado de un mensaje que describe el cambio asociado a esta nueva *snapshot* del repositorio.
+
+Su sintaxis es:
+
+```bash
+git commit [options]
+```
+
+Incluyendo el mensaje asociado al commit:
+
+```bash
+git commit -m [texto]
+```
