@@ -144,3 +144,77 @@ El comando `git status` nos permite conocer los detalles de archivos del reposit
 Para ver una versión más brave de la salida de este comando, podemos usar la flag **--short** o **-s**
 
 Las capturas anteriores eran justamente resultado de ejecutar `git status`.
+
+### git diff
+
+El comando `git diff` nos permite ver las diferencias entre dos estados del repositorio.
+
+#### Comparar nuestro directorio de trabajo con el Index
+
+Recordemos que el **Index** se refiere al área de staging.
+
+Para este fin, basta con ejecutar `git diff`.
+
+También podemos ser más específicos:
+
+```bash
+git diff -- archivo.txt
+```
+
+Este comando comparará el archivo especificado con la versión que existe en el Index (o área de staging). 
+
+#### Comparar nuestro directorio de trabajo con un Commit o una rama
+
+La sintaxis para esto es la siguiente:
+
+```bash
+git diff [commit_hash] -- [path_file_or_directory]
+```
+
+Para comparar el HEAD (último commit de la rama actual) con el directorio src/ podemos usar:
+
+```bash
+git diff HEAD -- src/
+```
+
+Para comparar nuestro directorio de trabajo con la rama **master**:
+
+```bash
+git diff master
+```
+
+#### Comparar el Index con un Commit
+
+Para comparar los archivos en el Index (área de staging) con un commit específico, se puede usar la opción **--staged** o **--cached** junto al comando `git diff`. Para esto necesitamos especificar el hash del commit, o bien tomará el HEAD por defecto:
+
+```bash
+git diff --cached [commit_hash]
+```
+
+O especificando un archivo o directorio:
+
+```bash
+git diff --cached [commit_hash] -- [path_file_or_directory]
+```
+
+Por ejemplo:
+
+```bash
+git diff --cached HEAD -- /src/main.py
+```
+
+Este último compara la versión del archivo **main.py** en el Index con el de la versión en el HEAD de la rama actual.
+
+#### Comparar Commits y ramas
+
+Para comparar los dos últimos commits de dos ramas, usamos la siguiente sintaxis:
+
+```bash
+git diff [commit_hash or branch_name] [commit_hash or branch_name]
+```
+
+Similar a los anteriores casos, podemos especificar un archivo o directorio a comparar:
+
+```bash
+git diff [commit_hash or branch_name] [commit_hash or branch_name] -- [path_file_or_directory]
+```
