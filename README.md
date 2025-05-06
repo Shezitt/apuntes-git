@@ -382,3 +382,8 @@ git remote add upstream https://github.com/original/proyecto.git
 |----------|------------------------------------------------------------------------------------------------|--------------------------------------------------|
 | origin   | El remote por defecto que apunta al repositorio  desde el que clonaste                         | Para hacer push o pull con tu copia              |
 | upstream | Un remote adicional que tú defines,  generalmente apuntando al repositorio original de un fork | Para hacer fetch o pull de los cambios oficiales |
+
+### git remote
+
+Un remote es simplemente una conexión a un repositorio alojado en otro lugar, normalmente en servicios como GitHub, GitLab o Bitbucket.
+Te permite sincronizar cambios entre tu repositorio local y ese repositorio remoto.
