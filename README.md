@@ -347,3 +347,15 @@ Se refiere a un repositorio que se encuentra en tu entorno local. El repositorio
 Un remote es simplemente una referencia a un repositorio que está alojado en otro lugar, normalmente en un servidor remoto como GitHub, GitLab, Bitbucket o incluso otro servidor privado.
 
 Cuando clonas o creas una copia de un repositorio remoto, Git guarda una referencia para poder conectarse a ese repositorio más tarde, y le asigna un nombre.
+
+### Origin
+
+*origin* es el nombre por defecto que Git le pone al *remote* del repositorio desde el que clonaste.
+
+Ejemplo:
+
+```bash
+git clone https://github.com/miusuario/mi-proyecto.git
+```
+
+Cuando clonas, Git automáticamente crea un remote llamado `origin` referenciando a esa URL.
