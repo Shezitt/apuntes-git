@@ -458,3 +458,13 @@ git log origin/main
 ```
 
 Pero tu rama actual no cambia.
+
+### git push
+
+Este comando actualiza la rama remota con nuestros commits locales. 
+
+Puedes hacer push de los commits de la rama actual a la rama remota con el comando:
+
+```bash
+git push [nombre_remoto]
+```
