@@ -325,3 +325,9 @@ Durante el rebase, puedes usar el siguiente comando para continuar:
 ```bash
 git rebase --continue
 ```
+
+## Obtener el código
+
+En un sistema de control de versiones distribuido, el código base reside en un punto central del cual los contribuidores pueden recuperar el código, hacer cambios locales y publicar los cambios en el host central.
+
+Algunos términos para describir el vínculo entre el código que se modifica localmente y el código hosteado en GitHub son los siguientes:
