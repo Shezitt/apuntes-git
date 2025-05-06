@@ -427,3 +427,7 @@ git remote add origin git@github.com:Shezitt/apuntes-git.git
 ```bash
 git remote remove <nombre>
 ```
+
+#### Cambiar la URL de un remote
+
+git remote set-url <nombre> <nueva-url>
