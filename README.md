@@ -387,3 +387,25 @@ git remote add upstream https://github.com/original/proyecto.git
 
 Un remote es simplemente una conexión a un repositorio alojado en otro lugar, normalmente en servicios como GitHub, GitLab o Bitbucket.
 Te permite sincronizar cambios entre tu repositorio local y ese repositorio remoto.
+
+#### Ver remotes configurados
+
+```bash
+git remote -v
+```
+
+Te muestra los remotes que tiene tu repositorio local y sus URL.
+
+Por ejemplo puede salir algo así:
+
+```bash
+origin  https://github.com/miusuario/mi-repo.git (fetch)
+origin  https://github.com/miusuario/mi-repo.git (push)
+```
+
+O si usamos llaves SSH:
+
+```bash
+origin  git@github.com:Shezitt/apuntes-git.git (fetch)
+origin  git@github.com:Shezitt/apuntes-git.git (push)
+```
