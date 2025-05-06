@@ -249,6 +249,10 @@ git commit -m [texto]
 
 Sirve para eliminar archivos y directorios de la zona de preparación (Index / staging area) y también del directorio de trabajo.
 
+```bash
+git rm [path_to_file]
+```
+
 También tenemos la opción de eliminar un archivo solo del Index pero no de nuestro directorio de trabajo:
 
 ```bash
