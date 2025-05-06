@@ -433,3 +433,7 @@ git remote remove <nombre>
 ```bash
 git remote set-url <nombre> <nueva-url>
 ```
+
+## Fetch, push y pull
+
+Estos comandos nos permiten sincronizar nuestro repositorio local con el repositorio remoto (o varios).
