@@ -258,3 +258,11 @@ También tenemos la opción de eliminar un archivo solo del Index pero no de nue
 ```bash
 git rm --cached archivo.txt
 ```
+
+### git mv
+
+Este comando nos permite mover o renombrar un archivo de forma fácil ya que, internamente, combina las operaciones de eliminación y adición en un solo paso.
+
+```bash
+git mv [source] [destination]
+```
