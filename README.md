@@ -359,3 +359,26 @@ git clone https://github.com/miusuario/mi-proyecto.git
 ```
 
 Cuando clonas, Git automáticamente crea un remote llamado `origin` referenciando a esa URL.
+
+### Diferencia entre Origin y Upstream
+
+`origin` es el **nombre por defecto** que Git le pone al remote del repositorio desde el que clonaste.
+
+`upstream` es **otro remote adicional que tú puedes configurar** y que generalmente se usa para referenciar el **repositorio original del que se hizo un fork**.
+
+El escenario de acción más común de ambos sería:
+
+* Haces un fork de un proyecto.
+* Clonas tu fork (que queda como `origin`).
+* Pero quieres hacer una referencia al repositorio original para traer sus cambios.
+
+Entonces le agregas un remote llamado `upstream`.
+
+```bash
+git remote add upstream https://github.com/original/proyecto.git
+```
+
+| Nombre   | Definición                                                                                     | Cuándo se usa                                    |
+|----------|------------------------------------------------------------------------------------------------|--------------------------------------------------|
+| origin   | El remote por defecto que apunta al repositorio  desde el que clonaste                         | Para hacer push o pull con tu copia              |
+| upstream | Un remote adicional que tú defines,  generalmente apuntando al repositorio original de un fork | Para hacer fetch o pull de los cambios oficiales |
