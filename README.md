@@ -277,3 +277,51 @@ Tiene distintas opciones, algunas son:
 * `git log --all` muestra el historial de todas las ramas.
 * `git log -n 5` muestra los últimos 5 commits.
 * `git log --graph --oneline` muestra el historial con gráfico de ramas y en una línea.
+
+
+### Amending Commits
+
+Supongamos que hiciste cambios y utilizaste `git commit`, y ahora te arrepientes del mensaje del commit o incluso de los archivos que commiteaste. Ahora veremos cómo podemos "editar" commits.
+
+#### Amend el commit más reciente
+
+Podemos editar o rehacer el último commit con la siguiente opción:
+
+```bash
+git commit --amend
+```
+
+#### Amend varios commits
+
+El comando **git rebase** nos proporciona las opciones **reword** y **edit** para editar commits.
+
+La opción **reword** nos permite editar un mensaje. Mientras que la opción **edit** nos permite no solo editar un mensaje, sino también el contenido de un commit.
+
+Cuando ejecutas:
+
+```bash
+git rebase -i HEAD~4
+```
+
+Le dices a Git: "quiero ver los últimos 4 commits y decidir qué hacer con cada uno". Aparece algo como:
+
+```bash
+pick 123abc Primer commit
+pick 456def Segundo commit
+pick 789ghi Tercer commit
+pick abc123 Cuarto commit
+```
+
+La palabra `pick` la podemos cambiar por varias acciones:
+
+* `pick`: dejar el commit tal cual.
+* `reword`: cambiar el mensaje del commit.
+* `edit`:  detenerse en ese commit para cambiar su contenido o mensaje.
+* `squash`: fusionarlo con el anterior.
+* `fixup`: fusionarlo sin conservar su mensaje.
+
+Durante el rebase, puedes usar el siguiente comando para continuar:
+
+```bash
+git rebase --continue
+```
