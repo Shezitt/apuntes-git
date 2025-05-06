@@ -266,3 +266,14 @@ Este comando nos permite mover o renombrar un archivo de forma fácil ya que, in
 ```bash
 git mv [source] [destination]
 ```
+
+### git log
+
+Nos permite listar el historial de cambios de una rama o de todo el repositorio. 
+
+Tiene distintas opciones, algunas son:
+* `git log` para ver el historial de la rama actual.
+* `git log <rama>` para ver el historial de una rama específica.
+* `git log --all` muestra el historial de todas las ramas.
+* `git log -n 5` muestra los últimos 5 commits.
+* `git log --graph --oneline` muestra el historial con gráfico de ramas y en una línea.
