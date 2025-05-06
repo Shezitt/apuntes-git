@@ -409,3 +409,15 @@ O si usamos llaves SSH:
 origin  git@github.com:Shezitt/apuntes-git.git (fetch)
 origin  git@github.com:Shezitt/apuntes-git.git (push)
 ```
+
+#### Agregar un nuevo remote
+
+```bash
+git remote add <nombre> <url>
+```
+
+Ejemplo:
+
+```bash
+git remote add origin git@github.com:Shezitt/apuntes-git.git
+``` 
