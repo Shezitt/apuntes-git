@@ -218,3 +218,13 @@ Similar a los anteriores casos, podemos especificar un archivo o directorio a co
 ```bash
 git diff [commit_hash or branch_name] [commit_hash or branch_name] -- [path_file_or_directory]
 ```
+
+### git add
+
+Ya sabemos que un archivo puede existir en tres formas, estas son: *untracked*, *unstaged* y *staged*. 
+
+El comando `git add` nos sirve para agregar archivos al **Index** desde nuestro directorio de trabajo:
+
+```bash
+git add [options] [path_to_files]
+```
