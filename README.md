@@ -574,3 +574,6 @@ También tenemos ramas auxiliares: **feature**, **release** y **hotfix**.
 6. Creas una **pull request** desde tu fork hasta el repositorio original. 
 7. Los desarrolladores del proyecto original revisarán, discutirán, te darán feedback y si todo está bien te aceptarán la pull request, haciendo merge de tus cambios al repositorio original.
 
+## Las ramas en Git
+
+Una rama es un puntero que apunta a un commit específico. Por defecto, todo proyecto tiene una rama llamada **main** o **master**, según la versión. Pero para trabajar ordenadamente, es muy común crear ramas nuevas para features, correcciones o pruebas. Pero esto depende del **workflow** que tomemos. 
