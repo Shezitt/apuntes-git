@@ -502,3 +502,9 @@ Revierte los cambios introducidos por el commit especificado.
 ```bash
 git revert [commit_hash]
 ```
+
+### git reset
+
+Este comando mueve el puntero **HEAD** a otro commit.
+
+Dependiendo del modo que escojamos (`--soft`, `--mixed`, `--hard`), afecta también a tu staging area y tu directorio de trabajo.
