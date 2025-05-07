@@ -516,3 +516,7 @@ Resetea el HEAD al commit especificado, pero no altera tu directorio de trabajo 
 #### git reset --hard [commit_hash]
 
 Resetea el HEAD al commit especificado. Tu área de staging y directorio de trabajo se descartan. 
+
+#### git reset --mixed [commit_hash]
+
+Resetea el HEAD al commit especificado. Tu área de staging se pierde, pero tu directorio de trabajo se mantiene. 
