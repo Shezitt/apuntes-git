@@ -530,3 +530,36 @@ Los Workflows, o flujos de trabajo, se refiere a qué convención toma un equipo
 Se usan dos ramas principales: **main** y **develop**. 
 
 También tenemos ramas auxiliares: **feature**, **release** y **hotfix**.
+
+#### main
+
+* Rama principal.
+* Siempre debe contener el código estable listo para la producción.
+* Cada vez que se hace un **release** o **deployment**, proviene de esta rama.
+
+#### develop
+
+* Aquí es donde se desarrolla el código.
+* Es la rama intermedia donde todos los programadores integran su trabajo.
+* Antes de integrar el código en producción, se deben hacer las pruebas en esta rama.
+* **Es el punto de partida para ramas de features.**
+
+#### feature
+
+* Se crean a partir de la rama **develop**.
+* Se usa para cada nueva funcionalidad que se quiere implementar.
+* Nombre común: `feature/nueva-funcionalidad`
+* Cuando la feature está terminada, se hace merge de nuevo con **develop**.
+
+#### release
+
+* Se crean a partir de **develop** cuando se quiere preparar **una nueva versión** para producción.
+* Se usa para preparar la release: pruebas finales y corrección de errores.
+* Una vez que el código está listo para producción, se fusiona tanto en **main** como en **develop** (para que develop se mantenga actualizado).
+* Nombre común: `release/v.1.2.0`.
+
+#### hotfix
+
+* Se crea a partir de **main** cuando es necesario hacer algún **arreglo urgente** en producción debido a algún bug.
+* Después de arreglar el problema, la rama **hotfix** se mergea tanto en **main** como en **develop**.
+* Nombre común: `hotfix/arreglo-urgente`
