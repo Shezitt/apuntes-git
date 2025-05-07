@@ -524,3 +524,9 @@ Resetea el HEAD al commit especificado. Tu área de staging se pierde, pero tu d
 ## Uso de Workflows
 
 Los Workflows, o flujos de trabajo, se refiere a qué convención toma un equipo para hacer introducir cambios en el repositorio. Se basa en qué uso le daremos a las ramas.
+
+### Gitflow
+
+Se usan dos ramas principales: **main** y **develop**. 
+
+También tenemos ramas auxiliares: **feature**, **release** y **hotfix**.
