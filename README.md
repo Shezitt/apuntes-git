@@ -520,3 +520,7 @@ Resetea el HEAD al commit especificado. Tu área de staging y directorio de trab
 #### git reset --mixed [commit_hash]
 
 Resetea el HEAD al commit especificado. Tu área de staging se pierde, pero tu directorio de trabajo se mantiene. 
+
+## Uso de Workflows
+
+Los Workflows, o flujos de trabajo, se refiere a qué convención toma un equipo para hacer introducir cambios en el repositorio. Se basa en qué uso le daremos a las ramas.
