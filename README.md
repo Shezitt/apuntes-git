@@ -480,3 +480,13 @@ Por ejemplo, para subir los cambios de la rama **main** al remoto **origin**:
 ```bash
 git push origin main
 ```
+
+### git pull
+
+Este comando descarga **e integra** los cambios del repositorio remoto al repositorio local. 
+
+Este comando ejecuta una combinación del comando **git fetch** y **git merge**. 
+
+```bash
+git pull [nombre_remoto] [nombre_rama]
+```
