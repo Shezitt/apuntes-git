@@ -494,3 +494,11 @@ git pull [nombre_remoto] [nombre_rama]
 ## Deshacer commits
 
 Git proporciona varias formas de revertir cambios.
+
+### git revert
+
+Revierte los cambios introducidos por el commit especificado. 
+
+```bash
+git revert [commit_hash]
+```
