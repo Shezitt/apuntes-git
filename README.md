@@ -683,3 +683,75 @@ git merge feature/login
 ```bash
 git log --oneline --graph --all
 ```
+
+### git stash
+
+Es un comando que guarda temporalmente los cambios no guardados (sin commitear) tanto de tu área de trabajo como de tu stating area, para que puedas volver a un estado limpio del repositorio sin perder tus cambios. 
+
+Los guarda en una "pila temporal" llamada *stash stack*.
+
+Se suele usar cuando estás trabajando en algo pero de repente quieres:
+
+* Cambiar de rama.
+* Hacer un pull.
+* Solucionar un hotfix urgente.
+* Revisar algo sin perder tus cambios en lo que estás trabajando.
+
+```bash
+git stash
+git checkout main
+```
+
+Esto hará que tus cambios se guarden en el stash, dejando tu área de trabajo limpia. Y luego cambias a la rama main.
+
+También puedes guardarlos con una descripción:
+
+```bash
+git stash save "trabajo en login"
+```
+
+#### Ver lista de stashes guardados
+
+```bash
+git stash list
+```
+
+#### Recuperar cambios
+
+Para recuperar el stash más reciente:
+
+```bash
+git stash apply
+```
+
+O para aplicar uno específico:
+
+```bash
+git stash apply stash@{numero}
+```
+
+Para aplicar **y eliminarlo de la pila**:
+
+```bash
+git stash pop
+```
+
+Para eliminar un stash:
+
+```bash
+git stash drop stash@{numero}
+```
+
+Para eliminar todos los stash:
+
+```bash
+git stash clear
+```
+
+#### Guardar también archivos sin trackear
+
+Para incluir archivos no trackeados (archivos nuevos):
+
+```bash
+git stash -u
+```
