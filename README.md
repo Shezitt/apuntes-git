@@ -512,3 +512,7 @@ Dependiendo del modo que escojamos (`--soft`, `--mixed`, `--hard`), afecta tambi
 #### git reset --soft [commit_hash]
 
 Resetea el HEAD al commit especificado, pero no altera tu directorio de trabajo ni tu area de staging, permanecen tal cual como estaban.
+
+#### git reset --hard [commit_hash]
+
+Resetea el HEAD al commit especificado. Tu área de staging y directorio de trabajo se descartan. 
