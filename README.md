@@ -577,3 +577,109 @@ También tenemos ramas auxiliares: **feature**, **release** y **hotfix**.
 ## Las ramas en Git
 
 Una rama es un puntero que apunta a un commit específico. Por defecto, todo proyecto tiene una rama llamada **main** o **master**, según la versión. Pero para trabajar ordenadamente, es muy común crear ramas nuevas para features, correcciones o pruebas. Pero esto depende del **workflow** que tomemos. 
+
+### Crear una rama
+
+```bash
+git branch nombre-rama
+```
+
+### Cambiarse a una rama existente
+
+```bash
+git checkout nombre-rama
+```
+
+También 
+
+```bash
+git switch nombre-rama
+```
+
+O crearla y cambiarse directamente:
+
+```bash
+git checkout -b nombre-rama
+```
+
+También 
+
+```bash
+git switch -c nombre-rama
+```
+
+### Listar ramas
+
+```bash
+git branch
+```
+
+Para ver también ramas remotas:
+
+```bash
+git branch -a
+```
+
+### Renombrar una rama
+
+Si estás en la rama que quieres renombrar:
+
+```bash
+git branch -m nuevo-nombre
+```
+
+Si no:
+
+```bash
+git branch -m nombre-viejo nuevo-nombre
+```
+
+Ejemplo:
+
+```bash
+git branch -m feature/login feature/signin
+```
+
+### Eliminar una rama
+
+#### Localmente
+
+```bash
+git branch -d nombre-rama
+```
+
+Puedes usar `-d` si la rama ya fue fusionada. Y `-D` si quieres forzar la eliminación aunque no haya sido fusionada.
+
+#### Remotamente
+
+```bash
+git push origin --delete nombre-rama
+```
+
+### Merging 
+
+Un **merge** combina los cambios de una rama en otra. Normalmente se hace para traer cambios de una rama secundaria a **main** o **develop**.
+
+Primero te posicionas en la rama donde quieres realizar los cambios:
+
+```bash
+git checkout main
+```
+
+Luego:
+
+```bash
+git merge nombre-rama-a-unir
+```
+
+Ejemplo: 
+
+```bash
+git merge feature/login
+```
+
+#### Listar el historial de ramas y merges
+
+```bash
+git log --oneline --graph --all
+```
