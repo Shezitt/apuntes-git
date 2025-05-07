@@ -490,3 +490,7 @@ Este comando ejecuta una combinación del comando **git fetch** y **git merge**.
 ```bash
 git pull [nombre_remoto] [nombre_rama]
 ```
+
+## Deshacer commits
+
+Git proporciona varias formas de revertir cambios.
