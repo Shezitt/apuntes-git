@@ -563,3 +563,14 @@ También tenemos ramas auxiliares: **feature**, **release** y **hotfix**.
 * Se crea a partir de **main** cuando es necesario hacer algún **arreglo urgente** en producción debido a algún bug.
 * Después de arreglar el problema, la rama **hotfix** se mergea tanto en **main** como en **develop**.
 * Nombre común: `hotfix/arreglo-urgente`
+
+### Forking Workflow
+
+1. Haces fork del repositorio original (upstream) para tener una copia de ese repositorio en tu cuenta de GitHub (origin).
+2. Clonas tu fork en tu máquina local.
+3. Opcionalmente, puedes configurar un remote adicional hacia el repositorio original: `git remote add upstream url-repo-original`.
+4. Creas ramas para trabajar nuevas funcionalidades en tu repositorio local. 
+5. Subes los cambios a tu fork: `git push origin feature/nueva-feature`.
+6. Creas una **pull request** desde tu fork hasta el repositorio original. 
+7. Los desarrolladores del proyecto original revisarán, discutirán, te darán feedback y si todo está bien te aceptarán la pull request, haciendo merge de tus cambios al repositorio original.
+
