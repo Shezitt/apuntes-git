@@ -755,3 +755,36 @@ Para incluir archivos no trackeados (archivos nuevos):
 ```bash
 git stash -u
 ```
+
+## Pull Request
+
+Una Pull Request (PR) es una solicitud que se hace para informar a otros desarrolladores de que se ha realizado una serie de cambios en una rama y se desea que estos cambios se integren en otra rama, generalmente en la rama main o develop.
+
+El término Pull Request se usa principalmente en GitHub y Bitbucket. En GitLab se llama Merge Request, pero el concepto es el mismo.
+
+1. Supongamos que tienes tu rama `feature/nueva-funcion`
+
+2. Haces tus cambios y tus commits en esa rama.
+
+3. Haces push a tu remoto.
+
+4. Se crea la **Pull Request** desde GitHub.
+
+    * Eliges:
+        * Rama de origen: `feature/nueva-funcion`
+        * Rama de destino: `main` (por ejemplo).
+
+5. Los revisores analizan el código: pueden comentar, sugerir cambios o aprobarlo.
+
+6. Se pueden hacer cambios adicionales en la misma rama y se actualiza automáticamente en la misma PR.
+
+7. Si se aprueba, **se hace el merge** de la PR a la rama destino.
+
+8. Opcionalmente, puedes borrar tu rama feature luego del merge.
+
+### Usos
+
+* Revisar código antes de integrarlo al repositorio principal.
+* Colaborar y discutir cambios con otros desarrolladores.
+* Mantener un flujo de trabajo ordenado y seguro en proyectos colaborativos.
+* Hacer control de calidad antes de incorporar nuevas funciones, correcciones o mejoras.
