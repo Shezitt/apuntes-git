@@ -1,26 +1,26 @@
-## Obtener el código
+# Obtener el código
 
 En un sistema de control de versiones distribuido, el código base reside en un punto central del cual los contribuidores pueden recuperar el código, hacer cambios locales y publicar los cambios en el host central.
 
 Algunos términos para describir el vínculo entre el código que se modifica localmente y el código hosteado en GitHub son los siguientes:
 
-### Upstream
+## Upstream
 
 Este se refiere al repositorio en el hosting. De este repositorio es del cual los contribuidores pueden clonar el repositorio para sus entornos locales, hacer cambios y luego publicarlos.
 
 Cuando se hace *forking*, hacemos fork de este repositorio. 
 
-### Downstream
+## Downstream
 
 Se refiere a un repositorio que se encuentra en tu entorno local. El repositorio *downstream* es el resultado de clonar un repositorio *upstream*. Es tu copia local de un repositorio upstream.
 
-### Remote
+## Remote
 
 Un remote es simplemente una referencia a un repositorio que está alojado en otro lugar, normalmente en un servidor remoto como GitHub, GitLab, Bitbucket o incluso otro servidor privado.
 
 Cuando clonas o creas una copia de un repositorio remoto, Git guarda una referencia para poder conectarse a ese repositorio más tarde, y le asigna un nombre.
 
-### Origin
+## Origin
 
 *origin* es el nombre por defecto que Git le pone al *remote* del repositorio desde el que clonaste.
 
@@ -32,7 +32,7 @@ git clone https://github.com/miusuario/mi-proyecto.git
 
 Cuando clonas, Git automáticamente crea un remote llamado `origin` referenciando a esa URL.
 
-### Diferencia entre Origin y Upstream
+## Diferencia entre Origin y Upstream
 
 `origin` es el **nombre por defecto** que Git le pone al remote del repositorio desde el que clonaste.
 
@@ -55,12 +55,12 @@ git remote add upstream https://github.com/original/proyecto.git
 | origin   | El remote por defecto que apunta al repositorio  desde el que clonaste                         | Para hacer push o pull con tu copia              |
 | upstream | Un remote adicional que tú defines,  generalmente apuntando al repositorio original de un fork | Para hacer fetch o pull de los cambios oficiales |
 
-### git remote
+## git remote
 
 Un remote es simplemente una conexión a un repositorio alojado en otro lugar, normalmente en servicios como GitHub, GitLab o Bitbucket.
 Te permite sincronizar cambios entre tu repositorio local y ese repositorio remoto.
 
-#### Ver remotes configurados
+### Ver remotes configurados
 
 ```bash
 git remote -v
@@ -82,7 +82,7 @@ origin  git@github.com:Shezitt/apuntes-git.git (fetch)
 origin  git@github.com:Shezitt/apuntes-git.git (push)
 ```
 
-#### Agregar un nuevo remote
+### Agregar un nuevo remote
 
 ```bash
 git remote add <nombre> <url>
@@ -94,23 +94,23 @@ Ejemplo:
 git remote add origin git@github.com:Shezitt/apuntes-git.git
 ``` 
 
-#### Eliminar un remote
+### Eliminar un remote
 
 ```bash
 git remote remove <nombre>
 ```
 
-#### Cambiar la URL de un remote
+### Cambiar la URL de un remote
 
 ```bash
 git remote set-url <nombre> <nueva-url>
 ```
 
-## Fetch, push y pull
+# Fetch, push y pull
 
 Estos comandos nos permiten sincronizar nuestro repositorio local con el repositorio remoto (o varios).
 
-### git fetch
+## git fetch
 
 ```bash
 git fetch [nombre_remoto]
@@ -131,7 +131,7 @@ git log origin/main
 
 Pero tu rama actual no cambia.
 
-### git push
+## git push
 
 Este comando actualiza la rama remota con nuestros commits locales.
 
@@ -153,7 +153,7 @@ Por ejemplo, para subir los cambios de la rama **main** al remoto **origin**:
 git push origin main
 ```
 
-### git pull
+## git pull
 
 Este comando descarga **e integra** los cambios del repositorio remoto al repositorio local. 
 
