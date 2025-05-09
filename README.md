@@ -85,7 +85,13 @@ git config --global --unset user.name
 
 ## Configurar llave SSH
 
-*Pendiente*.
+Las llaves SSH nos permiten conectarnos de forma segura a GitHub sin tener que escribir ni usuario ni contraseña al hacer `git push` o `git pull`.
+
+Para generar tu llave SSH:
+
+```bash
+ssh-keygen -t rsa -b 4096 -C "correo@gmail.com"
+```
 
 ## Crear un repositorio 
 
