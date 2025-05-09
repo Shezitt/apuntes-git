@@ -4,6 +4,10 @@
 
 Git es un sistema de control de versiones distribuido que permite gestionar y registrar los cambios realizados en archivos a lo largo del tiempo.
 
+## ¿Qué es GitHub?
+
+GitHub es una plataforma en línea que permite alojar repositorios de Git, facilitando la colaboración entre desarrolladores.
+
 ## Instalación (Linux)
 
 Para instalar Git en Linux, basta con ejecutar el siguiente comando:
