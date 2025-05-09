@@ -13,9 +13,9 @@ Inicialmente, todos los contenidos de este repositorio fueron trabajados en la r
 
 A continuación se listan las ramas, en un orden que más o menos cada rama tenga como prerequisito a las ramas que le preceden:
 
-1. introduccion
-2. los-commits
-3. obtener-codigo
-4. deshacer-cambios
-5. workflows
-6. ramas-y-merging
+1. [Introducción](https://github.com/Shezitt/apuntes-git/tree/introduccion)
+2. [Los commits](https://github.com/Shezitt/apuntes-git/tree/los-commits)
+3. [Obtener el código](https://github.com/Shezitt/apuntes-git/tree/obtener-codigo)
+4. [Deshacer cambios](https://github.com/Shezitt/apuntes-git/tree/deshacer-cambios)
+5. [Workflows](https://github.com/Shezitt/apuntes-git/tree/workflows)
+6. [Ramas y merging](https://github.com/Shezitt/apuntes-git/tree/ramas-y-merging)
