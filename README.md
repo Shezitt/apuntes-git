@@ -81,8 +81,8 @@ Es una filosofía de trabajo que define cuándo compartir tu código o ideas con
 
 ### Comparación de las tres acciones
 
-| Accion | ¿Cuando se usa?                  | Seguridad                                                     | Pull request                                                |
+| Acción | ¿Cuándo se usa?                  | Seguridad                                                     | Pull request                                                |
 |--------|----------------------------------|---------------------------------------------------------------|-------------------------------------------------------------|
 | Ship   | Cambio pequeño y sin riesgo.     | Sabes lo que estas haciendo.                                  | No es necesario.                                            |
-| Shop   | Cambio util que otros deben ver. | Estas seguro de lo que haces, pero quieres que otros lo vean. | Si, muestras lo que haces. Pero haces merge inmediatamente. |
+| Shop   | Cambio útil que otros deben ver. | Estas seguro de lo que haces, pero quieres que otros lo vean. | Sí, muestras lo que haces. Pero haces merge inmediatamente. |
 | Ask    | Cambio grande o riesgoso.        | Necesitas ayuda o participacion de otros.                     | Necesario.                                                  |
