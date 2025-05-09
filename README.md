@@ -50,3 +50,38 @@ También tenemos ramas auxiliares: **feature**, **release** y **hotfix**.
 5. Subes los cambios a tu fork: `git push origin feature/nueva-feature`.
 6. Creas una **pull request** desde tu fork hasta el repositorio original. 
 7. Los desarrolladores del proyecto original revisarán, discutirán, te darán feedback y si todo está bien te aceptarán la pull request, haciendo merge de tus cambios al repositorio original.
+
+## Ship / Show/ Ask
+
+Es una filosofía de trabajo que define cuándo compartir tu código o ideas con otros según su nivel de impacto o riesgo. Da más libertad a los colaboradores para contribuir código. Es muy útil para CI/CD.
+
+### Ship
+
+- Hazlo y súbelo sin preguntar.
+- Lo usas cuando:
+  - Es un cambio pequeño.
+  - No afecta a otros.
+  - Es una mejora menor o una corrección obvia.
+  - Estás seguro de lo que estás haciendo.
+
+### Show
+
+- Hazlo, compártelo y muestra lo que hiciste.
+- Lo usas cuando:
+  - Es un cambio útil que otros deberían conocer.
+  - Puede afectar a otros compañeros, pero no es riesgoso.
+
+### Ask
+
+- Consulta antes de hacerlo.
+- Lo usas cuando:
+  - Es un cambio grande o delicado.
+  - Puede tener consecuencias importantes.
+  - Afecta a varias personas.
+
+### Comparación de las tres acciones
+
+| Nombre   | Definicion                                                                                     | Cuando se usa                                    |
+|----------|------------------------------------------------------------------------------------------------|--------------------------------------------------|
+| origin   | El remote por defecto que apunta al repositorio  desde el que clonaste                         | Para hacer push o pull con tu copia              |
+| upstream | Un remote adicional que tú defines,  generalmente apuntando al repositorio original de un fork | Para hacer fetch o pull de los cambios oficiales |
