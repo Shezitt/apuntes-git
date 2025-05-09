@@ -81,7 +81,8 @@ Es una filosofía de trabajo que define cuándo compartir tu código o ideas con
 
 ### Comparación de las tres acciones
 
-| Nombre   | Definicion                                                                                     | Cuando se usa                                    |
-|----------|------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| origin   | El remote por defecto que apunta al repositorio  desde el que clonaste                         | Para hacer push o pull con tu copia              |
-| upstream | Un remote adicional que tú defines,  generalmente apuntando al repositorio original de un fork | Para hacer fetch o pull de los cambios oficiales |
+| Accion | ¿Cuando se usa?                  | Seguridad                                                     | Pull request                                                |
+|--------|----------------------------------|---------------------------------------------------------------|-------------------------------------------------------------|
+| Ship   | Cambio pequeño y sin riesgo.     | Sabes lo que estas haciendo.                                  | No es necesario.                                            |
+| Shop   | Cambio util que otros deben ver. | Estas seguro de lo que haces, pero quieres que otros lo vean. | Si, muestras lo que haces. Pero haces merge inmediatamente. |
+| Ask    | Cambio grande o riesgoso.        | Necesitas ayuda o participacion de otros.                     | Necesario.                                                  |
