@@ -2,6 +2,8 @@
 
 ## ¿Qué es Git?
 
+Git es un sistema de control de versiones distribuido que permite gestionar y registrar los cambios realizados en archivos a lo largo del tiempo.
+
 ## Instalación (Linux)
 
 Para instalar Git en Linux, basta con ejecutar el siguiente comando:
