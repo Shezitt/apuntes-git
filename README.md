@@ -47,3 +47,26 @@ Desde `main`:
 ```bash
 git cherry-pick a1b2c3d
 ```
+
+## git bisect
+
+Es una herramienta para encontrar rápidamente qué commit introdujo un bug usando búsqueda binaria.
+
+### Cómo funciona
+
+* Le dices a Git cuál fue el último commit bueno y cuál es el malo (donde ya está el error).
+* Git va probando commits intermedios (por mitad) y te pregunta si ese commit está bien o mal.
+* Así, reduce las pruebas de forma eficiente hasta encontrar el commit problemático.
+
+### Comandos básicos
+
+```bash
+git bisect start
+git bisect bad          # Marca el commit actual como defectuoso
+git bisect good <hash>  # Marca un commit anterior como correcto
+```
+
+Luego, Git te posicionará en commits intermedios. Ahí tú pruebas manualmente el código y le dices: `git bisect good` o `git bisect bad`.
+
+Cuando lo encuentre, te indicará cuál fue el primer commit que introdujo el bug. Para terminar usas `git bisect reset`, para volver al estado original. 
+
