@@ -14,3 +14,16 @@ Los hooks se encuentran en el directorio `/.git/hooks` de tu repositorio. Git tr
 
 * `pre-push`: Se ejecuta antes de un `git push`. Puedes usarlo para hacer pruebas antes de subir tu código al repositorio remoto.
 
+## Git Aliases
+
+Los aliases son una forma de crear comandos personalizados para hacer más fácil el uso de Git. Puedes definir tus propios comandos o abreviar comandos largos para usarlos más rápido.
+
+```bash
+git config --global alias.<nombre-alias> <comando-de-git>
+```
+
+Por ejemplo, se puede configurar un alias para un comando largo como `git log`:
+
+```bash
+git config --global alias.lg "log --oneline --graph --all --decorate"
+```
