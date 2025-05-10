@@ -25,6 +25,7 @@ A continuación se listan las ramas, en un orden donde más o menos cada rama ti
 4. ♻️ [Deshacer cambios](https://github.com/Shezitt/apuntes-git/tree/deshacer-cambios)
 5. 🛠️ [Workflows](https://github.com/Shezitt/apuntes-git/tree/workflows)
 6. 🌳 [Ramas y merging](https://github.com/Shezitt/apuntes-git/tree/ramas-y-merging)
+7. 🧙‍♂️ [Trucos en Git](https://github.com/Shezitt/apuntes-git/tree/trucos)
 
 ---
 
