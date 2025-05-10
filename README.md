@@ -27,3 +27,23 @@ Por ejemplo, se puede configurar un alias para un comando largo como `git log`:
 ```bash
 git config --global alias.lg "log --oneline --graph --all --decorate"
 ```
+
+## git cherry-pick
+
+Permite aplicar un commit específico de una rama a otra, sin necesidad de hacer un merge completo.
+
+Es útil cuando quieres traer solo uno (o varios) cambios puntuales de otra rama, sin arrastrar todo el historial.
+
+Sintaxis:
+
+```bash
+git cherry-pick <hash_del_commit>
+```
+
+Por ejemplo, digamos que en la rama `feature-x` hiciste un commit con hash `a1b2c3d` que necesitas en `main`.
+
+Desde `main`:
+
+```bash
+git cherry-pick a1b2c3d
+```
