@@ -21,7 +21,7 @@ A continuación se listan las ramas, en un orden donde más o menos cada rama ti
 
 1. 📌 [Introducción](https://github.com/Shezitt/apuntes-git/tree/introduccion)
 2. 📝 [Los commits](https://github.com/Shezitt/apuntes-git/tree/los-commits)
-3. 📥 [Obtener el código](https://github.com/Shezitt/apuntes-git/tree/obtener-codigo)
+3. 📥 [Obtener el código](https://github.com/Shezitt/apuntes-git/tree/obtener-el-codigo)
 4. ♻️ [Deshacer cambios](https://github.com/Shezitt/apuntes-git/tree/deshacer-cambios)
 5. 🛠️ [Workflows](https://github.com/Shezitt/apuntes-git/tree/workflows)
 6. 🌳 [Ramas y merging](https://github.com/Shezitt/apuntes-git/tree/ramas-y-merging)
