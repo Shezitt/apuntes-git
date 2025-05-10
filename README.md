@@ -1,31 +1,16 @@
-# 📚 Mis apuntes de Git / GitHub 🐙
+# Trucos en Git
 
-En este repositorio he documentado todos mis apuntes sobre **Git** y **GitHub**. 🚀
+## Git Hooks
 
----
+Git hooks son scripts que se ejecutan automáticamente en ciertas fases de un repositorio Git, como antes de un commit, después de un push, etc.
 
-## 📖 Fuentes de información
+Los hooks se encuentran en el directorio `/.git/hooks` de tu repositorio. Git trae algunos scripts de ejemplo en ese directorio con extensión `.sample`.
 
-Los contenidos de este repositorio tienen como fuente los siguientes recursos:
+### Tipos de hooks
 
-* 🎓 Curso impartido por **Winsor** para las **Postulaciones SCESI 2025**.
-* 📘 Libro: *Alex Magana, Joseph Muli. Version Control with Git and GitHub*.
+* `pre-commit`: Se ejecuta antes de un `git commit`. Puedes usarlo para ejecutar pruebas, análisis estático, o formatear el código antes de hacer el commit.
 
----
+* `commit-msg`: Se ejecuta después de un commit, pero antes de que Git registre el mensaje. Es útil para asegurar que los mensajes de commit sigan un formato específico.
 
-## 🗂️ Organización del repositorio
+* `pre-push`: Se ejecuta antes de un `git push`. Puedes usarlo para hacer pruebas antes de subir tu código al repositorio remoto.
 
-Inicialmente, todos los contenidos de este repositorio fueron trabajados en la rama `main`, sin embargo, para mayor organización y dado el volumen de la información 📑, decidí organizarlo por ramas 🌿, donde cada rama divide una sección de mis apuntes. 
-
-A continuación se listan las ramas, en un orden donde más o menos cada rama tiene como prerequisito a las ramas que le preceden:
-
-1. 📌 [Introducción](https://github.com/Shezitt/apuntes-git/tree/introduccion)
-2. 📝 [Los commits](https://github.com/Shezitt/apuntes-git/tree/los-commits)
-3. 📥 [Obtener el código](https://github.com/Shezitt/apuntes-git/tree/obtener-codigo)
-4. ♻️ [Deshacer cambios](https://github.com/Shezitt/apuntes-git/tree/deshacer-cambios)
-5. 🛠️ [Workflows](https://github.com/Shezitt/apuntes-git/tree/workflows)
-6. 🌳 [Ramas y merging](https://github.com/Shezitt/apuntes-git/tree/ramas-y-merging)
-
----
-
-✨ Espero que pueda serle útil a cualquiera que se pase por acá ;) ✨
